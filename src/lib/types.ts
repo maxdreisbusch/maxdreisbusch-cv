@@ -47,6 +47,13 @@ export interface ResumeData {
       href: string;
     };
   }>;
+   volunteer:
+    {
+      organisation: string,
+      works: string[],
+      start: string,
+      end: string|null,
+    }[]
 }
 
 // GraphQL compatible types (without React components)
