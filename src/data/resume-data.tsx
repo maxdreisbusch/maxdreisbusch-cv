@@ -1,236 +1,271 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Max Dreisbusch",
+  initials: "MD",
+  location: "Aschaffenburg, Germany, CET",
+  locationLink: "https://www.google.com/maps/place/Aschaffenburg",
+  about: "Senior Software Engineer focused on architecture, DevOps, and end-to-end product development.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
-    </>
+    Senior Software Engineer with deep expertise in system architecture,
+    scalable infrastructure, and DevOps automation. Skilled in designing and
+    implementing robust frontend and backend solutions, driving technical
+    excellence, and optimizing developer workflows across distributed teams.
+  </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/18073989?v=4",
+  personalWebsiteUrl: "https://max-dreisbusch.de",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "ax.dreisbusch@gmx.de",
+    tel: "+49 151 12010355",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/maxdreisbusch",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/max-dreisbusch-67788281/",
         icon: "linkedin",
       },
       {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
+        name: "Instagram",
+        url: "https://www.instagram.com/max.dreisbusch",
+        icon: "globe",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
+      school: "Friedrich Dessauer Gymnasium Aschaffenburg - MINT",
+      degree: "Abitur",
       start: "2007",
-      end: "2010",
+      end: "2016",
+    },
+    {
+      school: "DHBW Mannheim - Business informatics Sales & Consulting",
+      degree: "Bachelor of science",
+      start: "2016",
+      end: "2019",
+    },
+    {
+      school: "Wilhelm Büchner Hochschule - Distributed & Mobile Systems",
+      degree: "Master of science",
+      start: "2020",
+      end: "2024",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
-      end: null,
+      company: "Sage GmbH",
+      link: "https://sage.com/",
+      badges: [".NET", "Angular", "DevOps", "TypeScript", "Kubernetes", "Docker", "Alexa", "Azure", "AWS"],
+      title: "Apprentice - Software Engineer",
+      start: "2016",
+      end: "2019",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
+          Working on modern web projects as well as maintaining C# & VB .NET 4.8 source code during the practical phases of my dual studies.
+          As part of my bachelor’s thesis, “Azure Service Fabric as an Alternative Infrastructure for Reducing Cloud Application Costs,” I explored the feasibility of transforming an on-premise solution into a cloud-based architecture and developed a proof of concept to validate the approach.
         </>
       ),
     },
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
+      company: "Sage GmbH",
+      link: "https://sage.com",
+      badges: ["React", "Redux", "TypeScript", "Azure DevOps", "Security Champion"],
+      title: "Software Engineer",
+      start: "2019",
+      end: "July 2022",
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+        In my role as a Software Engineer at Sage GmbH, I focus on frontend development using React, TypeScript, and Redux. I also manage our team’s Git repositories and maintain the build and release pipelines on the Azure DevOps Server. Additionally, I have led communication and collaboration between national and international development teams.
+        <br />
+        As a Security Champion, I am responsible for ensuring code quality and securing our frontend applications. My work included
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              identifying and mitigating vulnerabilities such as XSS and injection attacks
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              managing known risks from third-party dependencies
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              maintaining robust security headers
             </li>
+            <li>implementing and optimizing OAuth-based authentication and authorization flows</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "sevDesk GmbH",
+      link: "https://sevdesk.de",
       badges: [
         "Remote",
         "React",
         "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
+        "Micro Frontend",
+        "Module Federation",
+        "Architecture",
+        "Proposals"
       ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      title: "Senior Software Engineer",
+      start: "August 2022",
+      end: "November 2023",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          As a Senior Software Engineer, I focus on gradually migrating our Angular frontend to React. To enable seamless integration and maintain a clean, modular architecture, I introduced Module Federation, allowing both technologies to coexist without overlapping responsibilities.
+          <br />In the absence of dedicated engineering managers, I also took on leadership responsibilities — representing the team in discussions with directors and C-level executives, contributing to both technical decision-making and team-related matters.
+        </>
+      ),
+    },
+    {
+      company: "Sage GmbH",
+      link: "https://sage.com",
+      badges: ["C# .NET", "Azure DevOps", "GitHub", "GitHub Workflows", "GitHub Actions", "cloudsmith", "MSBuild", "MSAccess", "typescript"],
+      title: "Senior Software Engineer",
+      start: "December 2023",
+      end: null,
+      description: (
+        <>
+          Leading the modernization of legacy DevOps processes by introducing contemporary technologies while ensuring a seamless experience for customers. The goal is to enable the development department to operate entirely without internal server resources or VPN dependencies. This includes migrating outdated build systems to modern, cloud-based CI/CD pipelines.
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Analyze existing development and deployment processes
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+              Optimize workflows toward standardized, efficient practices
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Introduce modern paradigms such as Semantic Versioning
+            </li>
+            <li>
+              Train colleagues in Git and GitHub best practices
+            </li>
+            <li>
+              Migrate source control from TFVC to Git
+            </li>
+            <li>
+              Rebuild and migrate legacy build pipelines (VB6, MS Access, .NET, etc.) to GitHub Actions
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
+      company: "Play Social UG (haftungsbeschränkt)",
+      link: "",
+      badges: ["Founder", "CEO", "Technical Lead", "React Native", "node.js", "TRPC", "Kubernetes"],
+      title: "CEO & CTO - building & selling a Smartphone App",
+      start: "2022",
+      end: "2025",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
+          Contributed to the design and development of Huddle, a social app that helps friends organize activities and discover local events. Responsible for core technical implementation and overall app architecture in collaboration with a small cross-functional team.
         </>
       ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "Frontend",
+    "Backend",
+    "System Architecture",
+    "Cloud Infrastructure",
+    "DevOps",
+    
+    "React/Next.js",
+    "React Native",
     "TypeScript",
+    "Redux",
+    "tanstack query, router, table, ...",
     "Tailwind CSS",
     "Design Systems",
-    "WebRTC",
+    
+
     "WebSockets",
+    "TRPC",
+    "REST",
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "express",
+
+    "IAM",
+    "OAuth",
+    "Docker",
+    "Kubernetes",
+    
+    "Grafana",
+    "Azure",
+    "AWS",
+    "fly.io",
+    "Terraform",
+    "Microsoft 365",
+    
+    "sonarqube",
+    "CodeQL",
+    "expo",
+    "GitHub",
+    "GitLab",
+    "Azure DevOps"
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Huddle",
+      techStack: ["TypeScript", "TRPC", "React Native", "express", "terraform", "kubernetes", "expo", "PostgreSQL"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
+        "App for meeting friends easily and checking what's up in your city",
+      
     },
     {
-      title: "Consultly",
+      title: "Mein TC Schönbusch",
       techStack: [
         "TypeScript",
         "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
+        "React Native",
+        "TRPC",
+        "Prisma",
+        "mantine",
+        "MySQL",
+        "fly.io",
+        "OAuth",
+        "Auth0"
       ],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "Platform for online club management including court bookings, payments, benefits and control interfaces (light, radiators, access)",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "mein.tc-schoenbusch.de",
+        href: "https://mein.tc-schoenbusch.de/",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "SanLucar Ladies Open",
+      techStack: ["Next.js", "Tailwind CSS"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "Website created with next.js connected to a wordpress blog to display latest news of the tournament",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "SanLucar Ladies Open",
+        href: "https://www.sanlucar-open.de/",
+      },
+    },
+    {
+      title: "TV Großwallstadt",
+      techStack: ["Wordpress"],
+      description:
+        "Website initially created with Wordpress for 2. HBL team TV Großwallstadt",
+      link: {
+        label: "TV Großwallstadt - Handball Bundesliga",
+        href: "https://www.tvgrosswallstadt.de/",
+      },
+    },
+    {
+      title: "alvaro Versicherungsmakler GmbH",
+      techStack: ["Next.js"],
+      description:
+        "Website & Microsoft 365 management for international insurance broker",
+      link: {
+        label: "alvaro Versicherungsmakler GmbH",
+        href: "https://www.lvaro-versicherungsmakler.de/",
       },
     },
   ],
