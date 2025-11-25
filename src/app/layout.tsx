@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv.jarocki.me"),
+  metadataBase: new URL("https://www.max-dreisbusch.de"),
   title: {
     default: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     template: `%s | ${RESUME_DATA.name}`,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "cv",
     "portfolio",
     RESUME_DATA.name,
-    "software engineer",
+    "senior software engineer",
     "full stack developer",
     "react",
     "next.js",
@@ -56,12 +56,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
-    description: RESUME_DATA.about,
-    creator: "@BartoszJarocki",
   },
   alternates: {
     canonical: RESUME_DATA.personalWebsiteUrl,

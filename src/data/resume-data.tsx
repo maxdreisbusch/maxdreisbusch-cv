@@ -5,13 +5,12 @@ export const RESUME_DATA: ResumeData = {
   initials: "MD",
   location: "Aschaffenburg, Germany, CET",
   locationLink: "https://www.google.com/maps/place/Aschaffenburg",
-  about: "Senior Software Engineer focused on architecture, DevOps, and end-to-end product development.",
+  about: "Architecting scalable systems and modernizing complex legacy environments is at the core of my work. I combine deep technical expertise with a pragmatic, product-driven mindset to help teams ship high-quality software.",
   summary: (
     <>
-    Senior Software Engineer with deep expertise in system architecture,
-    scalable infrastructure, and DevOps automation. Skilled in designing and
-    implementing robust frontend and backend solutions, driving technical
-    excellence, and optimizing developer workflows across distributed teams.
+    I am a Senior Software Engineer with deep expertise in system architecture, scalable infrastructure, and DevOps automation. Over the years, I have led initiatives to modernize complex legacy environments, transform outdated delivery pipelines into cloud-native CI/CD systems, and introduce engineering practices that significantly improve team productivity and long-term maintainability. My work spans the full technology stack — from designing robust backend services and secure API architectures to building modern, modular frontend applications with React, micro frontends, and shared design systems.<br />
+    Beyond hands-on engineering, I am passionate about enabling teams. I regularly drive cross-functional collaboration, provide technical details in decision-making processes, and represent engineering interests to stakeholders when needed. I enjoy creating clarity in complex systems, simplifying workflows through automation, and fostering a culture of quality, security, and ownership.<br />
+    With experience ranging from enterprise-scale software modernization to building and launching my own mobile product as CEO/CTO, I combine strong technical depth with an entrepreneurial mindset. I value clean architecture, thoughtful abstractions, and solutions that balance innovation with reliability. Ultimately, I am motivated by building systems — technical and organizational — that empower teams to ship great products efficiently and sustainably.
   </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/18073989?v=4",
@@ -41,18 +40,24 @@ export const RESUME_DATA: ResumeData = {
     {
       school: "Wilhelm Büchner Hochschule - Distributed & Mobile Systems",
       degree: "Master of science",
+      thesisTitle: "Prototypical implementation of an AI-based system to automatically generate a book draft using a large language model",
+      thesisTags: ["AI", "React", "Typescript", "Node.js", "LLM", "API"],
       start: "2020",
       end: "2024",
     },
     {
       school: "DHBW Mannheim - Business informatics Sales & Consulting",
       degree: "Bachelor of science",
+      thesisTitle: "Azure Service Fabric as an alternative infrastructure for reducing costs in the operation of windows-based cloud applications",
+      thesisTags: ["K8s", "Docker", ".Net", "C#", "Azure Service Fabric", "Azure", "AWS"],
       start: "2016",
       end: "2019",
     },
     {
       school: "Friedrich Dessauer Gymnasium Aschaffenburg - MINT",
       degree: "Abitur",
+      thesisTitle: "Design and Implementation of a Tennis Court Booking System with Online Payments, Lighting, and Heating Control",
+      thesisTags: ["✍️ German", "✍️ Math", "✍️ Informatics", "Business & Law" ,"English"],
       start: "2007",
       end: "2016",
     },
@@ -172,46 +177,94 @@ export const RESUME_DATA: ResumeData = {
     
     
   ],
-  skills: [
-    "Frontend",
-    "Backend",
-    "System Architecture",
-    "Cloud Infrastructure",
-    "DevOps",
-    
-    "React/Next.js",
-    "React Native",
-    "TypeScript",
-    "Redux",
-    "tanstack query, router, table, ...",
-    "Tailwind CSS",
-    "Design Systems",
-    
+  skills: 
+    [
+  {
+    "title": "🧭 working methods",
+    "skills": [
+      "Agil methods (Scrum, Kanban)",
+      "DevOps",
+      "Design Systems",
+      "Migration Angular → React",
+      "Migration TFVC → Git"
+    ]
+  },
+  {
+    "title": "🧱 infrastructure",
+    "skills": [
+      "System Architecture",
+      "Cloud Infrastructure",
+      "Azure",
+      "AWS",
+      "fly.io",
+      "Terraform",
+      "Kubernetes",
+      "Docker"
+    ]
+  },
+  {
+    "title": "🔧 ecosystem",
+    "skills": [
+      "GitHub",
+      "GitLab",
+      "Azure DevOps",
+      "Jira",
+      "Confluence",
+      "Microsoft Planner",
+      "Microsoft 365"
+      , "npm", "NuGet"
+    ]
+  },
+  {
+    title: "🌐 languages",
+    skills: ["typescript", "javascript", "YAML", "c#", "visual basic .NET", ".NET", ".NET Framework"]
+  },
+  {
+    "title": "🎨 frontend",
+    "skills": [
+      "React","Next.js",
+      "React Native","Expo",
+      "Redux",
+      "TanStack *",
+      "Tailwind CSS",
+      "MantineUI"
+    ]
+  },
+  {
+    "title": "🛠 backend & API",
+    "skills": [
+      "Node.js",
+      "express",
+      "REST",
+      "TRPC",
+      "WebSockets"
+    ]
+  },
+  {
+    "title": "🔐 security & identity",
+    "skills": [
+      "IAM",
+      "OAuth",
+      "Auth0",
+      "Okta",
+      "Ory"
+    ]
+  },
+  {
+    "title": "📊 monitoring",
+    "skills": [
+      "Grafana", "New relic", "prometheus"
+    ]
+  },
+  {
+    "title": "📦 code-quality & security",
+    "skills": [
+      "SonarQube",
+      "CodeQL",
+      "Fortify"
+    ]
+  },
 
-    "WebSockets",
-    "TRPC",
-    "REST",
-    "Node.js",
-    "express",
-
-    "IAM",
-    "OAuth",
-    "Docker",
-    "Kubernetes",
-    
-    "Grafana",
-    "Azure",
-    "AWS",
-    "fly.io",
-    "Terraform",
-    "Microsoft 365",
-    
-    "sonarqube",
-    "CodeQL",
-    "expo",
-    "GitHub",
-    "GitLab",
-    "Azure DevOps"
   ],
   projects: [
     {
@@ -274,37 +327,23 @@ export const RESUME_DATA: ResumeData = {
   ],
 
   volunteer: [
-    
     {
       organisation: "TC Schönbusch Aschaffenburg e.V.",
-      works: ["Vice President Marketing & Events", "interim youth coordinator"],
-      start: "April 2024",
-      end: null,
-    },
-    {
-      organisation: "TC Schönbusch Aschaffenburg e.V.",
-      works: ["Youth Coordinator"],
-      start: "May 2019",
-      end: "April 2024",
-    },
-    {
-      organisation: "TC Schönbusch Aschaffenburg e.V.",
-      works: ["Website", "Court booking & club management portal"],
-      start: "2008",
-      end: null,
-    },
+      works: [
+        "since 2024 - Vice President Marketing & Events",
+        "since 2024 - interim youth coordinator",
+        "since 2008 - IT Infrastructure",
+        "since 2010 - Website & club management portal",
+        "May 2019 - April 2024 - youth coordinator"],
+        start: "2008",
+        end: "now",
+      },
     
     {
       organisation: "SanLucar Ladies Open",
-      works: ["Tournament Management", "Sponsorship Relations"],
-      start: "2017",
-      end: null,
-    },
-    {
-      organisation: "SanLucar Ladies Open",
-      works: ["Ballkids & LineUmpire Management", "Website"],
+      works: ["Tournament Management", "Ballkids & LineUmpire Management", "Website", "Technical Director", "Sponsorship Relations"],
       start: "2014",
-      end: null,
+      end: "now",
     },
   ],
 } as const;

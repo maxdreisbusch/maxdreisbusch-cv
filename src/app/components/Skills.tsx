@@ -2,31 +2,64 @@ import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-type Skills = readonly string[];
+type Skills = readonly { title: string; skills: string[] }[];
 
-interface SkillsListProps {
-  skills: Skills;
-  className?: string;
+interface SkillsTagsProps {
+  tags: string[];
 }
 
 /**
- * Renders a list of skills as badges
+ * Renders a list of technology tags used in the project
  */
-function SkillsList({ skills, className }: SkillsListProps) {
+function SkillsTags({
+  tags,
+}: SkillsTagsProps) {
+  if (tags.length === 0) return null;
+
   return (
     <ul
-      className={cn("flex list-none flex-wrap gap-1 p-0", className)}
-      aria-label="List of skills"
+      className="mt-2 flex list-none flex-wrap gap-1 p-0"
+      aria-label="skills"
     >
-      {skills.map((skill) => (
-        <li key={skill}>
-          <Badge className="print:text-[10px]" aria-label={`Skill: ${skill}`}>
-            {skill}
+      {tags.map((tag) => (
+        <li key={tag}>
+          <Badge
+            className="px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+            variant="secondary"
+          >
+            {tag}
           </Badge>
         </li>
       ))}
     </ul>
+  );
+}
+
+interface SkillsCardProps {
+  title: string;
+  tags: string[];
+}
+
+/**
+ * Card component displaying project information
+ */
+function SkillsCard({
+  title,
+  tags,
+}: SkillsCardProps) {
+  return (
+    <Card className="flex h-full flex-col overflow-hidden border p-3">
+      <CardHeader>
+          <CardTitle className="text-base">
+            {title}
+          </CardTitle>
+      </CardHeader>
+      <CardContent className="mt-auto flex">
+        <SkillsTags tags={tags} />
+      </CardContent>
+    </Card>
   );
 }
 
@@ -45,7 +78,23 @@ export function Skills({ skills, className }: SkillsProps) {
       <h2 className="text-xl font-bold" id="skills-section">
         Skills
       </h2>
-      <SkillsList skills={skills} aria-labelledby="skills-section" />
+      <div
+        className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
+        role="feed"
+        aria-labelledby="side-projects"
+      >
+        {skills.map((skill) => (
+          <article
+            key={skill.title}
+            className="h-full"
+          >
+            <SkillsCard
+              title={skill.title}
+              tags={skill.skills}
+            />
+          </article>
+        ))}
+      </div>
     </Section>
   );
 }

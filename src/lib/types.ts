@@ -25,6 +25,8 @@ export interface ResumeData {
   education: Array<{
     school: string;
     degree: string;
+    thesisTitle: string;
+    thesisTags: string[];
     start: string;
     end: string;
   }>;
@@ -37,7 +39,7 @@ export interface ResumeData {
     end: string | null;
     description: string | React.ReactNode;
   }>;
-  skills: string[];
+  skills: { title: string, skills: string[]; }[];
   projects: Array<{
     title: string;
     techStack: string[];
@@ -109,7 +111,7 @@ export interface GraphQLMe {
   contact: GraphQLContact;
   education: GraphQLEducation[];
   work: GraphQLWork[];
-  skills: string[];
+  skills: { title: string; skills: string[]; }[];
   projects: GraphQLProject[];
 }
 
