@@ -16,7 +16,7 @@ export const RESUME_DATA: ResumeData = {
   avatarUrl: "https://avatars.githubusercontent.com/u/18073989?v=4",
   personalWebsiteUrl: "https://max-dreisbusch.de",
   contact: {
-    email: "ax.dreisbusch@gmx.de",
+    email: "max.dreisbusch@gmx.de",
     tel: "+49 151 12010355",
     social: [
       {
